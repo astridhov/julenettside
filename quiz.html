@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Quiz</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero small">
+    <div class="overlay">
+      <p class="kicker"><i>GOD JUL</i></p>
+      <h1 class="highlight">Julequiz</h1>
+
+      <nav class="menu">
+        <button onclick="location.href='index.html'">Hjem</button>
+        <button onclick="location.href='minner.html'">Minner</button>
+        <button onclick="location.href='kalender.html'">Kalender</button>
+        <button onclick="location.href='hilsen.html'">Hilsen</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">Ken kjenne familien best? </p>
+
+    <section class="card">
+      <h2>1) Ka e viktigast i jula?</h2>
+      <div class="answers">
+        <button class="answer" data-correct="false">Julegave</button>
+        <button class="answer" data-correct="true">Å være sammen</button>
+        <button class="answer" data-correct="false">Middag</button>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) Ka e favorittleika til Borghild?</h2>
+      <div class="answers">
+        <button class="answer" data-correct="false">Playstation</button>
+        <button class="answer" data-correct="false">Elsparkesykkel</button>
+        <button class="answer" data-correct="true">Hårstrekk</button>
+      </div>
+    </section>
+
+    <div class="result" id="quizResult">Velg et svar 👆</div>
+  </main>
+
+  <footer>
+    <p>God jul ❤️</p>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

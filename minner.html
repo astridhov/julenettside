@@ -1,0 +1,55 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Minner</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero small">
+    <div class="overlay">
+      <p class="kicker"><i>GOD JUL</i></p>
+      <h1 class="highlight">Minner</h1>
+
+      <nav class="menu">
+        <button onclick="location.href='index.html'">Hjem</button>
+        <button onclick="location.href='kalender.html'">Kalender</button>
+        <button onclick="location.href='quiz.html'">Quiz</button>
+        <button onclick="location.href='hilsen.html'">Hilsen</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">Her kjeme noken av mine favorittminne sammen! trykk på "vis tekst for å vite historia</p>
+
+    <section class="card">
+      <h2>Randotur i sola ☀️</h2>
+      <img class="photo" src="images/ski.JPG" alt="Skitur" />
+      <button class="reveal" data-target="m1">Vis tekst</button>
+      <p id="m1" class="hidden">Ditte va kanskje min første ordentlige randoné tur og de va grusomt låkt i beina. Heldigvis satt vi oss i sida og åt pølse og solo super! fantastisk fin tur.</p>
+    </section>
+
+    <section class="card">
+      <h2>Hoppebilde 😄</h2>
+      <img class="photo" src="images/hopp.jpg" alt="Minne 2" />
+      <button class="reveal" data-target="m2">Vis tekst</button>
+      <p id="m2" class="hidden">Vi he monge både vellykka og mislykka forsøk på hoppebilde. Men en ting e sikkert - dei e like morsomme i ettertid uansett utfall hehe. Her på Raudøya </p>
+    </section>
+
+    <section class="card">
+      <h2>Jacuzzi!!!!</h2>
+      <img class="photo" src="images/bad.jpg" alt="Minne 3" />
+      <button class="reveal" data-target="m3">Vis tekst</button>
+      <p id="m3" class="hidden">Livsnytara :) </p>
+    </section>
+  </main>
+
+  <footer>
+    <p>God jul ❤️</p>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

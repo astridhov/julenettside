@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kalender</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero small">
+    <div class="overlay">
+      <p class="kicker"><i>GOD JUL</i></p>
+      <h1 class="highlight">Julekalender</h1>
+
+      <nav class="menu">
+        <button onclick="location.href='index.html'">Hjem</button>
+        <button onclick="location.href='minner.html'">Minner</button>
+        <button onclick="location.href='quiz.html'">Quiz</button>
+        <button onclick="location.href='hilsen.html'">Hilsen</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">Trykk for å åpne.</p>
+
+    <div class="grid">
+      <button class="luke" data-msg="Takk for at dokke alltid stille opp ❤️">Luke 1</button>
+      <button class="luke" data-msg="Oppgave: Torstein må joike">Luke 2</button>
+      <button class="luke" data-msg="Ej e heldig som he dokke🎄">Luke 3</button>
+      <button class="luke" data-msg="2026: stress mindre 😄">Luke 4</button>
+      <button class="luke" data-msg="Håpe dokke e/blir fornøgde med gavene i år">Luke 5</button>
+      <button class="luke" data-msg="Takk for oppmerksomheita.">Luke 6</button>
+    </div>
+
+    <div class="result" id="kalenderResult">Klikk for å åpne luke 👆</div>
+  </main>
+
+  <footer>
+    <p>God jul ❤️</p>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

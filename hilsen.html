@@ -1,0 +1,43 @@
+<!doctype html>
+<html lang="no">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Hilsen</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+
+<body>
+  <header class="hero small">
+    <div class="overlay">
+      <p class="kicker"><i>GOD JUL</i></p>
+      <h1 class="highlight">Helsing</h1>
+
+      <nav class="menu">
+        <button onclick="location.href='index.html'">Hjem</button>
+        <button onclick="location.href='minner.html'">Minner</button>
+        <button onclick="location.href='kalender.html'">Kalender</button>
+        <button onclick="location.href='quiz.html'">Quiz</button>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <p class="intro">Skriv ei julehelsing her. Trykk “Kopier” for å sende i chat/SMS.</p>
+
+    <textarea id="message" rows="7" class="textbox">God jul ❤️
+Astrid er kul. Hei og Hopp
+    </textarea>
+
+    <div class="actions">
+      <button id="copyMessage">Kopier</button>
+      <span id="copyStatus" class="muted"></span>
+    </div>
+  </main>
+
+  <footer>
+    <p>God jul ❤️</p>
+    <script src="script.js" defer></script>
+  </footer>
+</body>
+</html>

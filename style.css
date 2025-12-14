@@ -1,0 +1,125 @@
+* { box-sizing: border-box; }
+body { margin: 0; font-family: Arial, Helvetica, sans-serif; background: #3d543cb1; color: #111; }
+
+.hero{
+  min-height: 92vh;
+  background-image:
+    linear-gradient(to bottom, rgba(255,255,255,0), rgb(226, 52, 52)),
+    url("images/forside.JPG");
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  align-items: center;
+}
+.hero.small{ min-height: 55vh; }
+
+.overlay{
+  width: 100%;
+  padding: 40px 20px;
+  text-align: center;
+}
+
+.kicker{ margin: 0 0 8px; color: rgba(0,0,0,0.65); }
+.sub{ margin: 10px auto 0; max-width: 650px; color: rgba(0,0,0,0.75); }
+
+.highlight{
+  margin: 0;
+  font-size: clamp(34px, 6vw, 74px);
+  font-weight: 800;
+  letter-spacing: -0.5px;
+  text-shadow: 0 10px 30px rgba(0,0,0,0.18);
+}
+
+.menu{
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 18px;
+}
+
+button{
+  border: none;
+  padding: 10px 14px;
+  border-radius: 10px;
+  cursor: pointer;
+  background: rgba(237, 225, 225, 0.764);
+}
+button:hover{ background: rgba(196, 61, 61, 0.93); }
+
+.panel{ margin-top: 18px; }
+.big{ padding: 12px 16px; font-weight: 700; }
+
+main{
+  max-width: 900px;
+  margin: 0 auto;
+  padding: 22px 16px 40px;
+}
+
+.intro{ margin: 0 0 16px; color: rgba(0,0,0,0.75); }
+
+.card{
+  background: rgba(0,0,0,0.04);
+  border-radius: 14px;
+  padding: 16px;
+  margin: 14px 0;
+}
+
+.photo{
+  width: 100%;
+  max-height: 700px;
+  object-fit: cover;
+  border-radius: 12px;
+  margin: 10px 0;
+}
+
+.reveal{ margin-top: 6px; }
+.hidden{ display: none; margin-top: 10px; }
+
+.grid{
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 10px;
+}
+@media (max-width: 700px){
+  .grid{ grid-template-columns: 1fr; }
+}
+
+.luke{
+  padding: 16px;
+  border-radius: 14px;
+  font-weight: 700;
+  background: rgba(0,0,0,0.06);
+}
+
+.answers{ display: flex; gap: 10px; flex-wrap: wrap; }
+.result{
+  margin-top: 14px;
+  padding: 12px 14px;
+  border-radius: 12px;
+  background: rgba(0,0,0,0.06);
+  font-weight: 700;
+}
+
+.textbox{
+  width: 100%;
+  max-width: 900px;
+  padding: 12px;
+  border-radius: 12px;
+  border: 1px solid rgba(0,0,0,0.18);
+  font-size: 15px;
+}
+
+.actions{
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  margin-top: 10px;
+}
+.muted{ color: rgba(0,0,0,0.65); }
+
+footer{
+  text-align: center;
+  padding: 18px 10px;
+  color: rgba(0,0,0,0.65);
+}
